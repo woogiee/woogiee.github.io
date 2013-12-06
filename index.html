@@ -5,7 +5,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Witty Title Goes here</title>
+	<title>Thoughts on stuff</title>
 	<meta name="author" content="Ed Lane">
 
 	
@@ -32,7 +32,7 @@ public string CalculateMD5Hash(string input &hellip;">
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link href="/atom.xml" rel="alternate" title="Witty Title Goes here" type="application/atom+xml">
+	<link href="/atom.xml" rel="alternate" title="Thoughts on stuff" type="application/atom+xml">
 	
 	<link rel="canonical" href="http://woogiee.github.io/">
 	<link href="/favicon.png" rel="shortcut icon">
@@ -41,11 +41,21 @@ public string CalculateMD5Hash(string input &hellip;">
 	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-	<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+	
 
   
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-46273480-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
 
 </head>
 
@@ -60,15 +70,15 @@ public string CalculateMD5Hash(string input &hellip;">
 	
 </div>
 <hgroup>
-  <h1><a href="/">Witty Title Goes here</a></h1>
+  <h1><a href="/">Thoughts on stuff</a></h1>
   
-    <h2>A witty subtitle will go here.</h2>
+    <h2>...and things.</h2>
   
 </hgroup>
 
 <nav id="main-nav"><ul class="main-navigation">
-  <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/blog/categories">categories</a></li>
+  <li><a href="/blog/archives">archives</a></li>
 </ul>
 
 </nav>
@@ -168,6 +178,26 @@ public string CalculateMD5Hash(string input &hellip;">
 </span></code></pre></td></tr></table></div></figure>
 
 
+<p>more text is here and doing stuff that is cool la la la</p>
+
+<div><script src='https://gist.github.com/7817481.js'></script>
+<noscript><pre><code>       public string CalculateMD5Hash(string input)
+        {
+            // step 1, calculate MD5 hash from input
+            MD5 md5 = System.Security.Cryptography.MD5.Create();
+            byte[] inputBytes = System.Text.Encoding.ASCII.GetBytes(input);
+            byte[] hash = md5.ComputeHash(inputBytes);
+
+            // step 2, convert byte array to hex string
+            StringBuilder sb = new StringBuilder();
+            for (int i = 0; i &lt; hash.Length; i++)
+            {
+                sb.Append(hash[i].ToString(&quot;X2&quot;));
+            }
+            return sb.ToString();
+        }</code></pre></noscript></div>
+
+
 		
 		
 	</div>
@@ -185,8 +215,7 @@ public string CalculateMD5Hash(string input &hellip;">
   Copyright &copy; 2013 - Ed Lane -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
-
-Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a></footer>
+</footer>
 			
 
 

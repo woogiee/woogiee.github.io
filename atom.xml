@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Witty Title Goes here]]></title>
+  <title><![CDATA[Thoughts on stuff]]></title>
   <link href="http://woogiee.github.io/atom.xml" rel="self"/>
   <link href="http://woogiee.github.io/"/>
-  <updated>2013-12-05T21:51:21-05:00</updated>
+  <updated>2013-12-06T12:55:19-05:00</updated>
   <id>http://woogiee.github.io/</id>
   <author>
     <name><![CDATA[Ed Lane]]></name>
@@ -51,6 +51,26 @@
 </span><span class='line'>  <span class="k">return</span> <span class="n">sb</span><span class="p">.</span><span class="n">ToString</span><span class="p">();</span>
 </span><span class='line'><span class="p">}</span>
 </span></code></pre></td></tr></table></div></figure>
+
+
+<p>more text is here and doing stuff that is cool la la la</p>
+
+<div><script src='https://gist.github.com/7817481.js'></script>
+<noscript><pre><code>       public string CalculateMD5Hash(string input)
+        {
+            // step 1, calculate MD5 hash from input
+            MD5 md5 = System.Security.Cryptography.MD5.Create();
+            byte[] inputBytes = System.Text.Encoding.ASCII.GetBytes(input);
+            byte[] hash = md5.ComputeHash(inputBytes);
+
+            // step 2, convert byte array to hex string
+            StringBuilder sb = new StringBuilder();
+            for (int i = 0; i &lt; hash.Length; i++)
+            {
+                sb.Append(hash[i].ToString(&quot;X2&quot;));
+            }
+            return sb.ToString();
+        }</code></pre></noscript></div>
 
 ]]></content>
   </entry>
