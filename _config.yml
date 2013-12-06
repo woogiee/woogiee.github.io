@@ -3,8 +3,8 @@
 # ----------------------- #
 
 url: http://woogiee.github.io
-title: Witty Title Goes here
-subtitle: A witty subtitle will go here.
+title: Thoughts on stuff
+subtitle: ...and things.
 author: Ed Lane
 email_md5: 19203e12d4d49de3b6ad33249c9634f7
 
@@ -90,7 +90,7 @@ disqus_short_name:
 disqus_show_comment_count: false
 
 # Google Analytics
-google_analytics_tracking_id:
+google_analytics_tracking_id: UA-46273480-1
 
 # Facebook Like
 facebook_like: false
