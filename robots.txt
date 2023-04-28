@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: 
-
-Sitemap: http://woogiee.github.io/sitemap.xml 
